@@ -1,4 +1,4 @@
-const API_KEY = AIzaSyAd3A6jhhsgCH9n9JQp2eH4AIwVTdOQlFg""; 
+const API_KEY = "aizasyad3a6jhhsgch9n9jqp2eh4aiwvtdoqlfg";
 const MODEL = "gemini-1.5-flash";
 
 async function sendMessage() {
@@ -22,7 +22,7 @@ async function sendMessage() {
                     parts: [
                         {
                             text: `
-You are LecGPT, a smart AI lecturer. 
+You are LecGPT, a smart AI lecturer developed by WRLD Tech. 
 Teach ANY subject: math, coding, science, physics, chemistry, biology, languages, history, business, geography, and more.
 
 Rules:
@@ -60,9 +60,7 @@ function addMessage(text, sender, id = "") {
     if (id) msg.id = id;
 
     if (sender === "bot") {
-        // Render Markdown
         msg.innerHTML = marked.parse(text);
-        // Render LaTeX math
         renderMathInElement(msg, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
