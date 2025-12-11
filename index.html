@@ -5,45 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LecGPT | WRLD Tech</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo.png">
-    <!-- GPT4All in-browser AI -->
     <script src="https://cdn.jsdelivr.net/npm/@gpt4all/gpt4all-browser/dist/gpt4all.min.js"></script>
 </head>
 <body>
 
-<!-- Splash Screen -->
-<div id="splash">
-    <img src="logo.png" alt="LecGPT Logo" class="splash-logo">
-    <h2>LecGPT</h2>
-    <p>by WRLD Tech</p>
-</div>
-
-<!-- Main UI -->
-<div id="main-ui" class="hidden">
-    <!-- Header -->
-    <div class="header">
-        <img src="logo.png" alt="LecGPT Logo" class="logo">
-        <span class="subtitle">Learn Anything, Anytime</span>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img src="logo.png" class="splash-logo" alt="LecGPT Logo">
+        <h2>LecGPT</h2>
+        <p>WRLD Tech AI Lecturer</p>
     </div>
 
-    <!-- Chat Container -->
-    <div id="chat-container"></div>
+    <!-- Main UI -->
+    <div id="main-ui" class="hidden">
+        <div class="header">
+            <img src="logo.png" class="logo" alt="LecGPT Logo">
+            <div class="subtitle">WRLD Tech AI Lecturer</div>
+        </div>
 
-    <!-- Input Area -->
-    <div class="input-area">
-        <input type="text" id="user-input" placeholder="Ask LecGPT anything..." />
-        <button onclick="sendMessage()">➤</button>
+        <div id="chat-container"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask LecGPT anything..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+        <div class="version-info">
+            <p>LecGPT v1.0.0 | WRLD Tech © 2025</p>
+        </div>
     </div>
 
-    <!-- Version Info -->
-    <div class="version-info">
-        <p>LecGPT v1.0.0 | WRLD Tech © 2025</p>
-    </div>
-</div>
-
-<!-- Scripts -->
-<script src="splash.js"></script>
-<script src="script.js"></script>
-
+    <script src="splash.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
