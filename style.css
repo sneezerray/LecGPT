@@ -1,4 +1,4 @@
-/* ===== Body ===== */
+/* Body */
 body {
     margin: 0;
     background: #0d0d0d;
@@ -6,7 +6,7 @@ body {
     color: #fff;
 }
 
-/* ===== Splash screen ===== */
+/* Splash Screen */
 #splash {
     position: fixed;
     top: 0;
@@ -47,11 +47,9 @@ body {
     100% {opacity: 1; transform: scale(1);}
 }
 
-#main-ui.hidden {
-    display: none;
-}
+#main-ui.hidden { display: none; }
 
-/* ===== Header ===== */
+/* Header */
 .header {
     display: flex;
     flex-direction: column;
@@ -73,7 +71,7 @@ body {
     font-size: 14px;
 }
 
-/* ===== Chat container ===== */
+/* Chat container */
 #chat-container {
     padding: 20px;
     height: 78vh;
@@ -91,19 +89,10 @@ body {
     white-space: pre-wrap;
 }
 
-.user {
-    background: #007bff;
-    margin-left: auto;
-    text-align: right;
-}
+.user { background: #007bff; margin-left: auto; text-align: right; }
+.bot { background: #1f1f1f; border: 1px solid #333; margin-right: auto; }
 
-.bot {
-    background: #1f1f1f;
-    border: 1px solid #333;
-    margin-right: auto;
-}
-
-/* ===== Code blocks ===== */
+/* Code blocks */
 .message pre {
     background: #2b2b2b;
     padding: 10px;
@@ -112,7 +101,7 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-/* ===== Input area ===== */
+/* Input area */
 .input-area {
     display: flex;
     padding: 10px;
@@ -129,10 +118,7 @@ body {
     border-radius: 8px;
 }
 
-.input-area input:focus {
-    outline: none;
-    box-shadow: 0 0 5px #007bff;
-}
+.input-area input:focus { outline: none; box-shadow: 0 0 5px #007bff; }
 
 .input-area button {
     margin-left: 10px;
@@ -146,33 +132,19 @@ body {
     transition: background 0.2s;
 }
 
-.input-area button:hover {
-    background: #005fcc;
-}
+.input-area button:hover { background: #005fcc; }
 
-/* ===== Scrollbar for chat ===== */
-#chat-container::-webkit-scrollbar {
-    width: 8px;
-}
+/* Scrollbar */
+#chat-container::-webkit-scrollbar { width: 8px; }
+#chat-container::-webkit-scrollbar-track { background: #1a1a1a; }
+#chat-container::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
 
-#chat-container::-webkit-scrollbar-track {
-    background: #1a1a1a;
-}
+/* Version info */
+.version-info { text-align: center; color: #777; font-size: 12px; padding: 10px 0; }
 
-#chat-container::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 4px;
-}
-
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 600px) {
-    #chat-container {
-        padding: 10px;
-    }
-    .message {
-        max-width: 90%;
-    }
-    .input-area input {
-        padding: 10px;
-    }
+    #chat-container { padding: 10px; }
+    .message { max-width: 90%; }
+    .input-area input { padding: 10px; }
 }
