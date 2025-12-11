@@ -1,23 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>AI Teacher Bot</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
 
-    <div class="header">
-        <h1>Teacher AI 👩🏽‍🏫</h1>
-    </div>
+.header {
+    text-align: center;
+    padding: 18px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
 
-    <div id="chat-container"></div>
+.subtitle {
+    margin-top: -5px;
+    color: #bbb;
+    font-size: 14px;
+}
 
-    <div class="input-area">
-        <input type="text" id="user-input" placeholder="Ask me anything..." />
-        <button onclick="sendMessage()">➤</button>
-    </div>
+#chat-container {
+    padding: 20px;
+    height: 78vh;
+    overflow-y: auto;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.message {
+    max-width: 75%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.user {
+    background: #007bff;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    margin-right: auto;
+}
+
+/* Code block style */
+.message pre {
+    background: #2b2b2b;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 12px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.input-area button {
+    margin-left: 10px;
+    padding: 0 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
