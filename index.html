@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>LecGPT - WRLD Tech</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    <!-- KaTeX for math -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LecGPT | WRLD Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- GPT4All in-browser AI -->
+    <script src="https://cdn.jsdelivr.net/npm/@gpt4all/gpt4all-browser/dist/gpt4all.min.js"></script>
 </head>
 <body>
 
+<!-- Splash Screen -->
+<div id="splash">
+    <img src="logo.png" alt="LecGPT Logo" class="splash-logo">
+    <h2>LecGPT</h2>
+    <p>by WRLD Tech</p>
+</div>
+
+<!-- Main UI -->
+<div id="main-ui" class="hidden">
+    <!-- Header -->
     <div class="header">
-        <h1>LecGPT 👩🏽‍🏫</h1>
-        <p class="subtitle">A WRLD Tech Product | Your Smart AI Lecturer</p>
+        <img src="logo.png" alt="LecGPT Logo" class="logo">
+        <span class="subtitle">Learn Anything, Anytime</span>
     </div>
 
+    <!-- Chat Container -->
     <div id="chat-container"></div>
 
+    <!-- Input Area -->
     <div class="input-area">
         <input type="text" id="user-input" placeholder="Ask LecGPT anything..." />
         <button onclick="sendMessage()">➤</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Version Info -->
+    <div class="version-info">
+        <p>LecGPT v1.0.0 | WRLD Tech © 2025</p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="splash.js"></script>
+<script src="script.js"></script>
+
 </body>
-<div class="version-info">
-    <p>LecGPT v1.0.0 | WRLD Tech © 2025</p>
-</div>    
-    
 </html>
