@@ -1,0 +1,2 @@
+# LecGPT
+Ai teacher
