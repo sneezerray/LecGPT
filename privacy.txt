@@ -1,0 +1,92 @@
+WRLD Tech - LecGPT Privacy Policy
+
+Effective Date: 11 December 2025
+
+WRLD Tech (“we”, “our”, “us”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use LecGPT, our AI teaching platform (“Service”). By using LecGPT, you agree to the terms of this Privacy Policy.
+
+1. Information We Collect
+
+We may collect the following types of information:
+
+a) User-Provided Information:
+   - Text input (queries you type to LecGPT)
+   - Account information (if registration/login is required)
+   - Feedback or support requests
+
+b) Automatically Collected Information:
+   - Device information (device type, operating system, browser type)
+   - IP address and approximate location
+   - Usage data (features used, session duration, error reports)
+   - Cookies and similar technologies to enhance the user experience
+
+2. How We Use Your Information
+
+We use your information to:
+
+   - Provide and maintain the Service
+   - Respond to your queries and support requests
+   - Personalize your experience
+   - Improve LecGPT’s functionality and content
+   - Monitor and analyze usage to enhance performance and security
+   - Comply with legal obligations
+
+3. Data Sharing and Disclosure
+
+We do not sell your personal information. We may share your data:
+
+   - With third-party service providers (e.g., Gemini API) solely to provide the Service
+   - When required by law or in response to legal processes
+   - To protect the rights, safety, and property of WRLD Tech, our users, or others
+
+4. Cookies and Tracking Technologies
+
+LecGPT may use cookies, local storage, and similar technologies to:
+
+   - Maintain session state
+   - Save preferences and settings
+   - Analyze site usage and performance
+
+You can disable cookies in your browser settings, but this may limit certain features.
+
+5. Third-Party Services
+
+LecGPT relies on third-party services to function, including:
+
+   - Gemini API (Google) to generate AI responses
+
+Please note that data sent to third-party services is subject to their privacy policies. We encourage you to review these policies separately.
+
+6. Data Retention
+
+We retain user-provided and automatically collected data only as long as necessary to provide the Service and comply with legal obligations. Data no longer needed will be securely deleted or anonymized.
+
+7. Security
+
+We implement reasonable technical, administrative, and physical safeguards to protect your information. However, no method of transmission or storage is completely secure. We cannot guarantee absolute security.
+
+8. User Rights
+
+Depending on your jurisdiction, you may have the right to:
+
+   - Access the personal information we hold about you
+   - Request corrections or deletions
+   - Object to certain processing activities
+   - Withdraw consent where applicable
+
+To exercise any of these rights, contact us at: support@wrldtech.com
+
+9. Children’s Privacy
+
+LecGPT is not intended for children under 13 years old. We do not knowingly collect personal information from children under 13. If we become aware of such data, we will take steps to delete it promptly.
+
+10. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated “Effective Date.” Continued use of LecGPT after changes indicates acceptance of the updated policy.
+
+11. Contact Information
+
+For questions or concerns about this Privacy Policy or LecGPT, please contact:
+
+WRLD Tech  
+Email: support@wrldtech.com  
+Website: https://www.wrldtech.com
