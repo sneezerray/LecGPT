@@ -29,4 +29,58 @@ It delivers answers in **step-by-step explanations**, **Markdown format**, **cod
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/sneezerray/LecGPT.git
+git clone https://github.com/YOUR_USERNAME/LecGPT.git
+
+2. Open index.html in a browser.
+
+
+3. Add your Gemini API key in script.js:
+
+
+
+const API_KEY = "YOUR_GEMINI_API_KEY";
+
+4. Start chatting with LecGPT!
+
+
+
+> Note: LecGPT uses the free tier of Gemini API. Limit your queries accordingly to avoid exceeding the quota.
+
+
+
+
+---
+
+🛡️ License
+
+LecGPT is a paid proprietary product by WRLD Tech.
+Do not copy, resell, distribute, or modify without permission. See LICENSE.txt for details.
+
+
+---
+
+📄 Privacy
+
+LecGPT respects your privacy. See PRIVACY.txt for full details.
+
+
+---
+
+💻 Contact
+
+For support, feedback, or inquiries:
+Email: support@wrldtech.com
+Website: https://www.wrldtech.com
+
+
+---
+
+LecGPT – Your Smart AI Lecturer, Powered by WRLD Tech
+
+---
+
+---
+
+If you want, I can **also make a “PRO version README”** showing how **paid users would log in, manage their account, and access premium features**, which looks super legit for clients or app stores.  
+
+Do you want me to do that next?
