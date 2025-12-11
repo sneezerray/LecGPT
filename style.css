@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Teacher Bot</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="header">
+        <h1>Teacher AI 👩🏽‍🏫</h1>
+    </div>
+
+    <div id="chat-container"></div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Ask me anything..." />
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
