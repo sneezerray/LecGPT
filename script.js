@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAd3A6jhhsgCH9n9JQp2eH4AIwVTdOQlFg";
+const API_KEY = AIzaSyAd3A6jhhsgCH9n9JQp2eH4AIwVTdOQlFg""; 
 const MODEL = "gemini-1.5-flash";
 
 async function sendMessage() {
@@ -22,21 +22,19 @@ async function sendMessage() {
                     parts: [
                         {
                             text: `
-You are **LecGPT**, a smart AI lecturer. 
-You teach ANY subject: mathematics, languages, science, coding, physics, biology, chemistry, geography, business, economics, history and more.
+You are LecGPT, a smart AI lecturer. 
+Teach ANY subject: math, coding, science, physics, chemistry, biology, languages, history, business, geography, and more.
 
 Rules:
-- Explain step-by-step, like a real lecturer.
-- Break down concepts so beginners understand.
-- Give examples.
-- Be friendly, clear and patient.
-- No slang. No confusion.
-- Always act like a professional teacher.
+- Explain step-by-step like a professional teacher.
+- Use examples.
+- Friendly, clear, and patient.
+- Format answers in Markdown with code and math if needed.
+- No slang, no confusion.
                             `
                         }
                     ]
                 },
-
                 contents: [
                     {
                         role: "user",
@@ -60,7 +58,20 @@ function addMessage(text, sender, id = "") {
 
     msg.classList.add("message", sender);
     if (id) msg.id = id;
-    msg.textContent = text;
+
+    if (sender === "bot") {
+        // Render Markdown
+        msg.innerHTML = marked.parse(text);
+        // Render LaTeX math
+        renderMathInElement(msg, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+            ]
+        });
+    } else {
+        msg.textContent = text;
+    }
 
     chat.appendChild(msg);
     chat.scrollTop = chat.scrollHeight;
