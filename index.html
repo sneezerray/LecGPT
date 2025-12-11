@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>AI Teacher Bot</title>
+    <title>LecGPT</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- KaTeX for math -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
 
     <div class="header">
-        <h1>Teacher AI 👩🏽‍🏫</h1>
+        <h1>LecGPT 👩🏽‍🏫</h1>
+        <p class="subtitle">Your Smart AI Lecturer</p>
     </div>
 
     <div id="chat-container"></div>
 
     <div class="input-area">
-        <input type="text" id="user-input" placeholder="Ask me anything..." />
+        <input type="text" id="user-input" placeholder="Ask LecGPT anything..." />
         <button onclick="sendMessage()">➤</button>
     </div>
 
