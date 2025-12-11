@@ -1,8 +1,9 @@
 let gpt = null;
 
+// Initialize GPT4All
 async function initGPT() {
     gpt = new GPT4AllBrowser();
-    await gpt.loadModel('gpt4all-lora-quantized.bin'); // host locally in project folder
+    await gpt.loadModel('models/gpt4all-lora-quantized.bin'); // local model path
     console.log("LecGPT ready!");
 }
 initGPT();
@@ -15,8 +16,13 @@ async function sendMessage() {
     addMessage(question, "user");
     input.value = "";
 
-    const answer = await gpt.predict(question);
-    addMessage(answer, "bot");
+    try {
+        const answer = await gpt.predict(question);
+        addMessage(answer, "bot");
+    } catch (err) {
+        addMessage("LecGPT couldn't respond. Try again later.", "bot");
+        console.error(err);
+    }
 }
 
 function addMessage(text, sender) {
